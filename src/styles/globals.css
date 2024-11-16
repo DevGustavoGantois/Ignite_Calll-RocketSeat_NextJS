@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gray-100: #e1e1e1;
+    --gray-900: #121214;
+}
+
+body, input {
+    background: var(--gray-900);
+    color: var(--gray-100);
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto', sans-serif;
+}

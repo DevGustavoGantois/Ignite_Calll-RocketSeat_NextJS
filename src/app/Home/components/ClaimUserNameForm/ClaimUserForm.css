@@ -1,0 +1,51 @@
+.form {
+    background: #202024;
+    padding: 2rem;
+    margin-top: 1rem;
+    border-radius: 0.875rem;
+}
+
+.controlContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.controlContainer input {
+    outline: none;
+    background: #1a1a1a;
+    border: none;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem; 
+    transition: border-color 0.3s;
+}
+
+.controlContainer input:focus {
+    border: 1px solid #00B37E; 
+}
+
+.controlContainer input::placeholder {
+    font-size: 0.875rem;
+}
+
+.controlContainer button {
+    background: #00B37E;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s; 
+}
+
+.controlContainer button:hover {
+    background: #00875F;
+    transform: scale(1.05); 
+}
+

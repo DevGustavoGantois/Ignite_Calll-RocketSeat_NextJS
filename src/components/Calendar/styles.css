@@ -1,0 +1,95 @@
+.calendarContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+}
+
+.calendarHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calendarTitle {
+    font-weight: 500; 
+}
+
+.calendarTitle span {
+    color: #c3c3c3;
+}
+
+.calendarActions {
+    display: flex;
+    gap: 8px;
+    color: #f2f2f2;
+}
+
+.calendarActions button {
+    all: unset;
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 4px; 
+}
+
+.calendarActions button svg {
+    width: 20px;
+    height: 20px;
+}
+
+.calendarActions button:hover {
+    color: #f1f1f1;
+}
+
+.calendarActions button:focus {
+    box-shadow: 0 0 0 2px #f1f1f1;
+}
+
+.calendarBody {
+    width: 100%;
+    font-family: sans-serif;
+    border-spacing: 0.25rem; 
+    table-layout: fixed;
+}
+
+.calendarBody thead th {
+    color: #f2f2f2;
+    font-weight: 500; 
+    font-size: 0.875rem; 
+}
+
+.calendarBody tbody:before {
+    content: '.';
+    line-height: 0.75rem;
+    display: block;
+    color: #c4c4c4;
+}
+
+.calendarBody tbody td {
+    box-sizing: border-box;
+}
+
+.calendarDay {
+    all: unset;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #010101;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+
+.calendarDay:disabled {
+    background: none;
+    cursor: default;
+    opacity: 0.4;
+}
+
+.calendarDay:not(:disabled):hover {
+    background: #c2c2c2;
+}
+
+.calendarDay:focus {
+    box-shadow: 0 0 0 2px #f1f1f1;
+}

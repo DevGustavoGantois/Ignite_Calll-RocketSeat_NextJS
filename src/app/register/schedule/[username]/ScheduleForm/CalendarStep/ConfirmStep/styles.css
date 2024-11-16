@@ -1,0 +1,45 @@
+.confirmForm {
+    max-width: 540px;
+    margin: 24px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.confirmForm label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formHeader {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #c3c3c3;
+}
+
+.formHeader p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.formHeader p svg {
+    color: #c2c2c2;
+    width: 20px;
+    height: 20px;
+}
+
+.formError {
+    color: #f75a68;
+}
+
+.formActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 8px;
+}

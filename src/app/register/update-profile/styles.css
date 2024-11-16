@@ -1,0 +1,16 @@
+.profileBox {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.profileBox label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formAnnotation {
+    color: #c3c3c3;
+}

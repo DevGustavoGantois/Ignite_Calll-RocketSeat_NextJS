@@ -1,0 +1,75 @@
+.container {
+    margin: 20px auto 0;
+    padding: 0;
+    display: grid;
+    max-width: 100%;
+    position: relative;
+    width: 540px;
+    grid-template-columns: 1fr;
+}
+
+.timePicker {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    border-left: 1px solid #c6c6c6;
+    padding: 24px 24px 0;
+    overflow-y: scroll; /* Corrigido */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 280px;
+}
+
+.timePickerHeader {
+    font-weight: 500; /* Corrigido */
+}
+
+.timePickerHeader span {
+    color: #f2f2f2;
+}
+
+.timePickerList { /* Corrigido */
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+}
+
+.timePickerItem {
+    border: 0;
+    background: #c7c7c7;
+    cursor: pointer;
+    color: #c1c1c1;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    line-height: 1.6;
+}
+
+.timePickerItem:last-child {
+    margin-bottom: 24px; /* Corrigido */
+}
+
+.timePickerItem:disabled {
+    background: none;
+    cursor: default;
+    opacity: 0.4;
+}
+
+.timePickerItem:disabled:hover {
+    background: #c2c2c2;
+}
+
+.timePickerItem:focus {
+    box-shadow: 0 0 0 2px #f1f1f1;
+}
+
+@media (max-width: 900px) {
+    .timePicker {
+        grid-template-columns: 1fr;
+    }
+
+    .timePickerList {
+        grid-template-columns: 1fr 1fr; 
+    }
+}

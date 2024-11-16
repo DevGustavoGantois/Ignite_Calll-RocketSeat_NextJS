@@ -1,0 +1,44 @@
+.container {
+    max-width: calc(100vw - (100vw - 1160px) / 2);
+    margin-left: auto;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    gap: 5rem;
+}
+
+.hero {
+    max-width: 480px;
+    padding: 0 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    color: #7C7C8A;
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.preview {
+    padding-right: 2rem;
+    overflow: hidden;
+}
+
+@media(max-width: 600px) {
+    .preview {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        text-align: center;
+    }
+}

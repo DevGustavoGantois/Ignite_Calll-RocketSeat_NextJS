@@ -1,0 +1,90 @@
+.containerRegister {
+    max-width: 572px;
+    margin: 80px auto 16px;
+    padding: 0px 16px;
+}
+
+.headerRegister {
+    padding: 0px 24px;
+}
+
+.headerRegister p {
+    margin-top: 20px;
+    color: #A9A9B2;
+    margin-bottom: 20px;
+}
+
+.step p {
+    color: #505059;
+}
+
+
+.containerVoidDiv {
+    display: flex;
+    gap: 20px;
+    
+}
+
+.voidDiv {
+    background: white;
+    height: 2px;
+    width: 450px;
+}
+
+.formRegister {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: #202024;
+    padding: 2rem;
+    border-radius: 0.875rem;
+}
+
+.formRegister input {
+    outline: none;
+    background: #1a1a1a;
+    border: none;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem; 
+    transition: border-color 0.3s;
+}
+
+.formRegister input:focus {
+    border: 1px solid #00B37E; 
+}
+
+.formRegister input::placeholder {
+    font-size: 0.875rem;
+}
+
+.formRegister button {
+    background: #00B37E;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s; 
+}
+
+.formRegister button:hover {
+    background: #00875F;
+    transform: scale(1.05); 
+}
+
+
+.formRegister label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formError {
+    color: #f75a68;
+}
